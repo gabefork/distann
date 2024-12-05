@@ -40,5 +40,5 @@ You would need your Github username and create a token (settings -> Developer se
     make
     ```
     The last command will generate an executable called `backend` (or `backend.exe` in Windows). On linux or Mac can test backend by running ./backend in terminal, then go to http://localhost:9000
-2. 
-TBD
+
+    For more detailed instructions, see the README in the [backend folder](backend/README.md).

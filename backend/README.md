@@ -21,10 +21,23 @@ backend/
 ```
 
 ## Getting the dependencies
-TBD
+You will need:
+- drogon
+- cmake
+- nlohmann-json
+- python3
 
 ## Preparing the embeddings dataset
-TBD
+1. Install dependencies
+   ```
+   pip3 install flask transformers torch
+   ```
+
+2. Generate the embeddings with flask
+   ```
+   flask --app app run
+   ```
+
 
 ## Compiling and running the backend
 1. Go to the `build` directory, please make the directory if not exist.
@@ -42,12 +55,13 @@ TBD
    The command above should produce `backend` (or `backend.exe`) in Windows.
 4. Finally, run the `backend`:
    ```
-   ./backend
+   ./backend 9000 backend all
    ```
    The command above will run the backend in the default port of `9000`.
    You can access the backend in your browser by visiting 
    `http://localhost:9000`.
 
+   If you encounter any errors about dependencies, install them and rerun `cmake ..` and build the backend again.
 
 ## Example request-response
 
